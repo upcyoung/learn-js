@@ -1,5 +1,10 @@
 
-//题1
+// 值是什么？
+String('11') == new String('11');
+String('11') === new String('11');
+
+
+//输出什么？
 function changeObjProperty(o) {
   o.siteUrl = "http://www.baidu.com"
   o = new Object()
@@ -9,8 +14,7 @@ let webSite = new Object();
 changeObjProperty(webSite);
 console.log(webSite.siteUrl);
 
-//题2
-
+//输出什么？
 function test () {
    console.log('start')
     setTimeout(() => {
