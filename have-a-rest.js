@@ -1,3 +1,14 @@
+//输出什么？
+var name = 'Tom';
+(function() {
+if (typeof name == 'undefined') {
+  var name = 'Jack';
+  console.log('Goodbye ' + name);
+} else {
+  console.log('Hello ' + name);
+}
+})();
+
 
 // 值是什么？
 String('11') == new String('11');
