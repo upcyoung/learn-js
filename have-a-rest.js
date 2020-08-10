@@ -1,49 +1,15 @@
 
-var a = 1;
-var b = a;
-b = 10;
+//题1
+function changeObjProperty(o) {
+  o.siteUrl = "http://www.baidu.com"
+  o = new Object()
+  o.siteUrl = "http://www.google.com"
+} 
+let webSite = new Object();
+changeObjProperty(webSite);
+console.log(webSite.siteUrl);
 
-// 这时a的值什么
-
-var aa = { name: 'vue' };
-var bb = aa;
-bb.name = 'angular';
-
-// 这时aa.name的值是什么
-
-var a1 = { name: 'vue' };
-var b1 = a1;
-a1 = null;
-
-// 这时b的值是什么
-
-var obj1 = { name:'vue' };
-var obj2 = obj1;
-obj1.author = obj1 = { name: 'you yu xi'};
-
-console.log(obj1.author);
-console.log(obj2.author);
-
-
-// 执行上下文
-var name = 'vue';
-function log() {
-  console.log(name);
-  var name = 'angular';
-}
-log();
-// 在控制台会输出什么
-
-
-var data = [];
-// var换成let会怎么样
-for(var i=0;i<3;i++) {
-  data[i] = function() {
-    console.log(i);
-  }
-}
-
-
+//题2
 
 function test () {
    console.log('start')
@@ -60,3 +26,7 @@ function test () {
 }
 
 test()
+
+
+
+
